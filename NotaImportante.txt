@@ -1,0 +1,1 @@
+Hola Profe, para poder jugar hay que iniciar un Jugador y un Streaming, y asi sucesivamente

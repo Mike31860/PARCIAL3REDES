@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="675.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="io.view.GameView">
+   <children>
+      <Canvas fx:id="myCanvas" height="675.0" width="1000.0" />
+      <AnchorPane layoutX="14.0" layoutY="621.0" prefHeight="40.0" prefWidth="396.0">
+         <children>
+            <Label fx:id="scoreTxt" layoutX="2.0" prefHeight="35.0" prefWidth="120.0" text="Score: ">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="songTxt" layoutX="121.0" layoutY="5.0" prefHeight="35.0" prefWidth="54.0" text="Song:">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="songList" layoutX="175.0" layoutY="10.0" prefWidth="150.0" />
+            <Button fx:id="select" layoutX="338.0" layoutY="9.0" mnemonicParsing="false" onAction="#selectBut" text="Select" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

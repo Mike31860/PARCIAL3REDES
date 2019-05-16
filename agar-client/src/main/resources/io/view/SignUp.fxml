@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="394.0" prefWidth="738.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="io.view.SignUpView">
+   <children>
+      <ImageView fitHeight="394.0" fitWidth="738.0">
+         <image>
+            <Image url="@1200x630.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="204.0" layoutY="127.0" prefHeight="236.0" prefWidth="340.0" style="-fx-background-color: #F3FBFF; -fx-border-color: #cecccc; -fx-border-radius: 10; -fx-background-radius: 10;">
+         <children>
+            <Label fx:id="TitleEmail" alignment="CENTER" layoutX="121.0" layoutY="14.0" prefHeight="32.0" prefWidth="109.0" text="Email">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <TextField fx:id="emailTxt" layoutX="101.0" layoutY="57.0" />
+            <Button fx:id="SignUpButton" layoutX="102.0" layoutY="177.0" mnemonicParsing="false" onAction="#SignUpBut" prefHeight="39.0" prefWidth="149.0" style="-fx-background-color: #54C800;" text="Sign up" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Label fx:id="TitlePassword" alignment="CENTER" layoutX="121.0" layoutY="91.0" prefHeight="32.0" prefWidth="109.0" text="Password">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <PasswordField fx:id="passwordTxt" layoutX="102.0" layoutY="133.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.canvas.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="675.0" prefWidth="1287.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="io.view.GameViewStreaming">
+   <children>
+      <Canvas fx:id="myCanvas" height="675.0" width="1000.0" />
+      <AnchorPane layoutX="14.0" layoutY="621.0" prefHeight="35.0" prefWidth="99.0">
+         <children>
+            <Label fx:id="scoreTxt" layoutX="1.0" prefHeight="35.0" prefWidth="120.0" text="Score: ">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <TextField fx:id="mensaje" layoutX="1011.0" layoutY="538.0" prefHeight="25.0" prefWidth="192.0" promptText="Escriba su mensaje" />
+      <Button fx:id="enviar" layoutX="1203.0" layoutY="538.0" mnemonicParsing="false" onAction="#enviarBut" prefHeight="25.0" prefWidth="73.0" text="Enviar" />
+      <ComboBox fx:id="songsList" layoutX="1032.0" layoutY="622.0" prefWidth="150.0" promptText="Lista de canciones" />
+      <Button fx:id="elegir" layoutX="1203.0" layoutY="622.0" mnemonicParsing="false" onAction="#elegirBut" text="Elegir" />
+      <Label fx:id="cancionTxt" alignment="CENTER" layoutX="1073.0" layoutY="573.0" prefHeight="35.0" prefWidth="121.0" text="Canción">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="chatTxt" alignment="CENTER" layoutX="1073.0" layoutY="14.0" prefHeight="35.0" prefWidth="121.0" text="Chat">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="ChatArea" editable="false" layoutX="1011.0" layoutY="49.0" prefHeight="489.0" prefWidth="265.0" />
+   </children>
+</AnchorPane>
